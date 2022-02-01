@@ -29,7 +29,7 @@ contract Campaign {
     uint public minimumContribution;
     uint numRequests;
     uint approversCount;
-    mapping(uint => Request) requests;
+    mapping(uint => Request) public requests;
 
     /* 
      * We avoid an array because the looping can raise tremendous amounts
